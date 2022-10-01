@@ -8,8 +8,8 @@ import React from 'react';
 import tw from 'twrnc';
 
 // Components
-import {ActivityIndicator, Text, MD3Colors} from 'react-native-paper';
-import {View} from 'react-native';
+import { ActivityIndicator, Text, MD3Colors } from 'react-native-paper';
+import { View } from 'react-native';
 import FastImage from 'react-native-fast-image';
 import assets from 'assets';
 

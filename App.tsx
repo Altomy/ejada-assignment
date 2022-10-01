@@ -6,11 +6,17 @@
 
 // Libraries
 import React from 'react';
-import {SafeAreaView, StatusBar} from 'react-native';
-import {Provider as PaperProvider} from 'react-native-paper';
-import tw from 'twrnc';
+import { SafeAreaView, StatusBar } from 'react-native';
+import { Provider as PaperProvider } from 'react-native-paper';
+import { enableFreeze, enableScreens } from 'react-native-screens';
+
 // Views
+import tw from 'twrnc';
 import Root from 'Root';
+
+// enable freeze and screens functions to optimize navigation
+enableFreeze(true);
+enableScreens(true);
 
 const App = () => {
   return (

@@ -1,17 +1,20 @@
 import React from 'react';
-import {View, Text} from 'react-native';
-import tw from 'twrnc';
-import {Loading} from 'views';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import { Home, Loading } from 'views';
+
+const Stack = createNativeStackNavigator<RootStackTypes>();
 
 export default () => {
-  const [isLoading] = React.useState(true);
-
-  if (isLoading) {
-    return <Loading />;
-  }
   return (
-    <View style={[tw`flex flex-1 bg-blue-400 justify-center items-center`]}>
-      <Text>Root</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        screenOptions={{ headerShown: false }}
+        initialRouteName="Loading">
+        <Stack.Screen name="Loading" component={Loading} />
+        <Stack.Screen name="Home" component={Home} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
