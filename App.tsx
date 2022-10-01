@@ -4,29 +4,22 @@
  * Created By Ahmed Altomy
  */
 
+// Libraries
 import React from 'react';
-import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-import {Home} from './src/views';
-
+import {SafeAreaView, StatusBar} from 'react-native';
+import {Provider as PaperProvider} from 'react-native-paper';
+import tw from 'twrnc';
 // Views
+import Root from 'Root';
 
 const App = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-    flex: 1,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <Home />
-    </SafeAreaView>
+    <PaperProvider>
+      <SafeAreaView style={tw`flex flex-1`}>
+        <StatusBar barStyle={'light-content'} />
+        <Root />
+      </SafeAreaView>
+    </PaperProvider>
   );
 };
 
