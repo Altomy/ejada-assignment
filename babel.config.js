@@ -20,6 +20,7 @@ module.exports = {
         alias: {
           '@views': './src/views',
           '@components': './src/components',
+          '@assets': './src/assets',
         },
       },
     ],
