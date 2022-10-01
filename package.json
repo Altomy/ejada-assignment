@@ -48,7 +48,8 @@
       "js"
     ],
     "roots": [
-      "<rootDir>/src/"
+      "<rootDir>/src/",
+      "<rootDir>/__tests__/"
     ]
   }
 }
