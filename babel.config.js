@@ -15,7 +15,7 @@ module.exports = {
     [
       'module-resolver',
       {
-        root: ['./'],
+        root: ['./src'],
         extensions: ['.js', 'jsx', '.ts', '.tsx', '.json'],
         alias: {
           '@views': './src/views',

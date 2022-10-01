@@ -7,9 +7,9 @@
 import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {Home} from './src/views';
 
 // Views
-import {Home} from 'views';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
