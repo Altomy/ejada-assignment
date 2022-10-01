@@ -47,8 +47,9 @@
       "tsx",
       "js"
     ],
-    "modulePaths": [
-      "./src"
+    "roots": [
+      "<rootDir>/src/",
+      "<rootDir>/test/"
     ]
   }
 }
