@@ -44,7 +44,8 @@
     "preset": "react-native",
     "moduleFileExtensions": [
       "ts",
-      "tsx"
+      "tsx",
+      "js"
     ],
     "modulePaths": [
       "./src"
