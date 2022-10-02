@@ -8,8 +8,8 @@ import React from 'react';
 import tw from 'twrnc';
 // Components
 import { View } from 'react-native';
-import { Base, UserCard } from 'components';
-import { Header } from './components';
+import { Base } from 'components';
+import { Controller, Header } from './components';
 
 // View
 export default () => {
@@ -17,7 +17,7 @@ export default () => {
     <Base>
       <View style={tw`flex-1`}>
         <Header />
-        <UserCard />
+        <Controller />
       </View>
     </Base>
   );

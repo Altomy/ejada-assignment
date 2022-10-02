@@ -11,6 +11,8 @@
       "@views/*":["src/views/*"],
       "@assets/*":["src/assets/*"],
       "@utils/*":["src/utils/*"],
+      "@context/*":["src/context/*"],
+      "@hooks/*":["src/hooks/*"],
     }
   }
 }

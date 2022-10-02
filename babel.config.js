@@ -22,9 +22,12 @@ module.exports = {
           '@components': './src/components',
           '@assets': './src/assets',
           '@utils': './src/utils',
+          '@hooks': './src/hooks',
+          '@context': './src/context',
         },
       },
     ],
+    'react-native-reanimated/plugin',
   ],
   env: {
     production: {

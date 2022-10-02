@@ -1,3 +1,3 @@
 import Header from './Header';
-
-export { Header };
+import Controller from './Controller';
+export { Header, Controller };
