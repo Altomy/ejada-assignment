@@ -47,9 +47,7 @@ export default () => {
     'worklet';
     if (values.value === width) {
       values.value = withTiming(0);
-      // setTimeout(() => {
-      //   searchRef.current.focus();
-      // }, 300);
+
       return;
     }
     values.value = withTiming(width);
@@ -63,6 +61,10 @@ export default () => {
           onPress={() => {
             toggleSearchBar();
             setTimeout(() => {
+              if (values.value === width) {
+                searchRef.current.blur();
+                return;
+              }
               searchRef.current.focus();
             }, 300);
           }}

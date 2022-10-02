@@ -1,4 +1,9 @@
 declare type RootStackTypes = {
-  Home: undefined;
+  BottomTab: undefined;
   Loading: undefined;
+};
+
+declare type BottomTabNavigationTypes = {
+  Home: undefined;
+  About: undefined;
 };

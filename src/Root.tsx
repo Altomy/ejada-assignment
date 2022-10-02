@@ -1,19 +1,22 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { Home, Loading } from 'views';
+import { Loading } from 'views';
+import { BottomTab } from './BottomTab';
 
 const Stack = createNativeStackNavigator<RootStackTypes>();
+export const Tab = createBottomTabNavigator<BottomTabNavigationTypes>();
 
 export default () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{ headerShown: false }}
-        initialRouteName="Home">
+        initialRouteName="BottomTab">
         <Stack.Screen name="Loading" component={Loading} />
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="BottomTab" component={BottomTab} />
       </Stack.Navigator>
     </NavigationContainer>
   );
