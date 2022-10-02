@@ -1,3 +1,5 @@
-const TESTING_ALIAS = 'zxdas';
+import Base from './Global/Base';
+import Loader from './Global/Loader';
+import UserCard from './UserCard';
 
-export { TESTING_ALIAS };
+export { Base, Loader, UserCard };

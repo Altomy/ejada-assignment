@@ -11,7 +11,7 @@ export default () => {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{ headerShown: false }}
-        initialRouteName="Loading">
+        initialRouteName="Home">
         <Stack.Screen name="Loading" component={Loading} />
         <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>

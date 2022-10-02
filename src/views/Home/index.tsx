@@ -7,14 +7,18 @@
 import React from 'react';
 import tw from 'twrnc';
 // Components
-import { Text } from 'react-native-paper';
 import { View } from 'react-native';
+import { Base, UserCard } from 'components';
+import { Header } from './components';
 
 // View
 export default () => {
   return (
-    <View style={tw`flex flex-1 bg-blue-200 justify-center items-center`}>
-      <Text variant="headlineMedium">Home</Text>
-    </View>
+    <Base>
+      <View style={tw`flex-1`}>
+        <Header />
+        <UserCard />
+      </View>
+    </Base>
   );
 };

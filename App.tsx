@@ -13,6 +13,7 @@ import { enableFreeze, enableScreens } from 'react-native-screens';
 // Views
 import tw from 'twrnc';
 import Root from 'Root';
+import ProvidersRoot from 'context/ProvidersRoot';
 
 // enable freeze and screens functions to optimize navigation
 enableFreeze(true);
@@ -23,7 +24,9 @@ const App = () => {
     <PaperProvider>
       <SafeAreaView style={tw`flex flex-1`}>
         <StatusBar barStyle={'light-content'} />
-        <Root />
+        <ProvidersRoot>
+          <Root />
+        </ProvidersRoot>
       </SafeAreaView>
     </PaperProvider>
   );
